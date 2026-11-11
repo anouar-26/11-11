@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My One & Only ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1c0911;
+  color: #f9e8e9;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background:
+    linear-gradient(#180710a8, #180710ed),
+    url('images/samia5.jpeg') center/cover;
+}
+
+.small-title {
+  color: #e8bd8a;
+  letter-spacing: 5px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-family: 'Allura', cursive;
+  font-size: clamp(65px, 13vw, 115px);
+  color: #e8bd8a;
+  text-shadow: 0 0 30px #c2185b66;
+}
+
+.hero p {
+  font-size: 17px;
+  margin: 15px 0;
+  color: #f8dfe6;
+}
+
+.main-photo {
+  width: 255px;
+  height: 330px;
+  object-fit: cover;
+  border: 5px solid #d6ad78;
+  border-radius: 150px 150px 20px 20px;
+  box-shadow: 0 0 35px #d6ad7844;
+  margin: 20px 0;
+}
+
+.hero h2 {
+  font-family: 'Allura', cursive;
+  color: #e8bd8a;
+  font-size: 65px;
+}
+
+button {
+  background: linear-gradient(135deg, #b51e50, #6d102f);
+  color: white;
+  border: 1px solid #e8bd8a;
+  padding: 15px 30px;
+  border-radius: 40px;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: .3s;
+  box-shadow: 0 5px 25px #c2185b55;
+}
+
+button:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 30px #e8bd8a88;
+}
+
+section {
+  padding: 75px 20px;
+}
+
+h2 {
+  font-family: 'Allura', cursive;
+  color: #e8bd8a;
+  font-size: 65px;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  color: #d9a6b5;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 25px;
+  max-width: 950px;
+  margin: auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border: 5px solid #d6ad78;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px #00000077;
+  transition: .4s;
+}
+
+.gallery img:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+.message {
+  max-width: 750px;
+  margin: auto;
+  padding: 40px 25px;
+  background: linear-gradient(145deg, #411626, #270d19);
+  border: 1px solid #d6ad78;
+  border-radius: 25px;
+  line-height: 2.2;
+  font-size: 16px;
+  box-shadow: 0 10px 40px #00000055;
+}
+
+.signature {
+  font-family: 'Allura', cursive;
+  color: #e8bd8a;
+  font-size: 55px;
+  margin-top: 25px;
+}
+
+.love {
+  color: #e8bd8a;
+  font-size: 22px;
+  margin: 30px 0;
+}
+
+#secret {
+  display: none;
+  margin-top: 30px;
+  color: #f4c5d5;
+  font-size: 22px;
+  line-height: 2;
+  animation: appear 1s ease;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+  padding: 40px 15px;
+  background: #390f21;
+  border-top: 1px solid #d6ad78;
+  color: #e8bd8a;
+}
+
+.heart {
+  position: fixed;
+  bottom: -30px;
+  animation: float 7s linear forwards;
+  pointer-events: none;
+  z-index: 10;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0);
+    opacity: 0;
+  }
+  20% { opacity: 1; }
+  100% {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@media(max-width:600px) {
+  .message { padding: 30px 18px; }
+  .gallery img { height: 260px; }
+  h2 { font-size: 52px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+  <div class="small-title">A SPECIAL MESSAGE FROM MY HEART</div>
+
+  <h1>Our Love Story</h1>
+
+  <p>For the most beautiful girl in my world ❤️</p>
+
+  <img src="images/samia5.jpeg"
+       class="main-photo"
+       alt="My beautiful Samia">
+
+  <h2>LMIDIMA 👑</h2>
+
+  <p>Every love story is beautiful, but ours is my favorite.</p>
+
+  <button onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">
+    Discover My Love ❤️
+  </button>
+
+</div>
+
+<section id="gallery">
+
+  <h2>My Beautiful Princess 🌹</h2>
+
+  <p class="subtitle">Every picture tells a beautiful story...</p>
+
+  <div class="gallery">
+    <img src="images/samia1.jpeg" alt="Samia 1">
+    <img src="images/samia2.jpeg" alt="Samia 2">
+    <img src="images/samia3.jpeg" alt="Samia 3">
+    <img src="images/samia4.jpeg" alt="Samia 4">
+  </div>
+
+</section>
+
+<section>
+
+  <h2>A Letter From My Heart 💌</h2>
+
+  <div class="message">
+
+    <p>
+      To my dearest Samia, LMIDIMA ❤️
+
+      <br><br>
+
+      I don't need a special day to tell you how much
+      I love you, because every day with you is special.
+
+      <br><br>
+
+      You are the smile behind my happiness,
+      the peace in my heart and the most beautiful
+      part of my life.
+
+      <br><br>
+
+      كنتمنا نبقا ديما نشوف الضحكة فوجهك،
+      ونكون سبب ففرحتك وراحتك.
+      الله يخليك ليا ويديم المحبة بيناتنا.
+
+      <br><br>
+
+      I may not be perfect, but one thing is certain:
+      my heart will always choose you.
+
+      <br><br>
+
+      Thank you for being you.
+      Thank you for making my world more beautiful.
+
+      <br><br>
+
+      I love you today, tomorrow and forever. ❤️
+    </p>
+
+    <div class="signature">
+      Forever Yours,<br>
+      Anouar ❤️
+    </div>
+
+    <div class="love">∞ You & Me ∞</div>
+
+    <button onclick="showSecret()">
+      Open My Secret ❤️
+    </button>
+
+    <div id="secret">
+      ❤️ SAMIA ❤️
+
+      <br><br>
+
+      Ila kan 3andi nkhtar mara okhra,
+      ghadi nkhtarek nti, f kol mara.
+
+      <br><br>
+
+      أنتِ اختياري اليوم وغداً وإلى الأبد. 👑
+
+      <br><br>
+
+      I LOVE YOU MORE THAN WORDS CAN SAY. 🌹
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  Made with all my love ❤️
+
+  <br><br>
+
+  Anouar & Samia
+
+  <br><br>
+
+  Forever & Always 🌹
+</footer>
+
+<script>
+
+function showSecret() {
+  const secret = document.getElementById("secret");
+
+  secret.style.display = "block";
+
+  secret.scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
+function createHeart() {
+
+  const heart = document.createElement("div");
+
+  heart.className = "heart";
+
+  heart.innerHTML = ["❤️", "💗", "💕", "🌹", "💖"][
+    Math.floor(Math.random() * 5)
+  ];
+
+  heart.style.left = Math.random() * 100 + "vw";
+
+  heart.style.fontSize =
+    (15 + Math.random() * 22) + "px";
+
+  heart.style.animationDuration =
+    (4 + Math.random() * 5) + "s";
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 9000);
+}
+
+setInterval(createHeart, 600);
+
+</script>
+
+</body>
+</html>
